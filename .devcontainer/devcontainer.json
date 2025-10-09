@@ -1,0 +1,29 @@
+{
+  "name": "Python Teaching Container",
+  "settings": {
+        "markdown.preview.security.level": "allow-insecure-local-content",
+        "extensions.ignoreRecommendations": true,
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "git.postCommitCommand": "sync",
+        "git.autofetch": true,
+        "githubPullRequests.createOnPublishBranch": "never",
+        "git.useEditorAsCommitInput": false,
+        "git.rebaseWhenSync": true,
+        "terminal.integrated.ignoreProcessKeybindingWarnings": true,
+        "files.exclude": {
+          ".devcontainer.json": true,
+          "**/.github": true,
+          "**/.devcontainer": true,
+          ".gitignore": true,
+          "**/tests": true
+        }
+  },
+  "extensions": [
+    "ms-python.python",
+    "searking.preview-vscode",
+    "noahsyn10.pydoctestbtn",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip install pandas matplotlib bs4 requests lxml"
+}
