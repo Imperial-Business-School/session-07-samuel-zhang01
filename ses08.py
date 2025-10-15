@@ -30,6 +30,11 @@ def lecture_graph():
     return distances
 
 
+x = 'Hey you'
+s = set(x)
+s.update('hey')
+len(s)
+
 def dijkstra(graph, start):
     """ 
     Shortest distances using Dijkstra's algorithm 
